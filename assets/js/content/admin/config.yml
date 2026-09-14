@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "assets/img/uploads"
+
+collections:
+  - name: "guides"
+    label: "Guide Catalog"
+    files:
+      - name: "guides"
+        label: "All Guides"
+        file: "content/guides.json"
+        fields:
+          - label: "Guides"
+            name: "guides"
+            widget: "list"
+            summary: "{{title}} — {{price}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL slug", name: "slug", widget: "string", hint: "Lowercase, dashes instead of spaces, e.g. my-new-guide" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Tagline (one line)", name: "tagline", widget: "string" }
+              - { label: "Full description", name: "description", widget: "text" }
+              - { label: "Price (e.g. $9)", name: "price", widget: "string" }
+              - { label: "Cover color — start", name: "cover_color_start", widget: "color" }
+              - { label: "Cover color — end", name: "cover_color_end", widget: "color" }
+              - { label: "Whop purchase link", name: "whop_link", widget: "string" }
+              - { label: "Featured", name: "featured", widget: "boolean", default: false, required: false }
