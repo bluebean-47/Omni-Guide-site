@@ -1,0 +1,16 @@
+{
+  "guides": [
+    {
+      "slug": "clipping-business-blueprint",
+      "title": "The Clipping Business Blueprint",
+      "category": "Business",
+      "tagline": "Turn other people's content into your first income stream.",
+      "description": "An 11-page, beginner-friendly walkthrough for starting a content-clipping business from zero — what it is, how the money works, and the exact steps to land your first paying client.",
+      "price": "$9",
+      "cover_color_start": "#123B52",
+      "cover_color_end": "#1E6E96",
+      "whop_link": "https://whop.com/omni-guide",
+      "featured": true
+    }
+  ]
+}
